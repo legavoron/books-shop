@@ -1,0 +1,24 @@
+.partners_images_container {
+    margin-top: 10.8rem;
+    width: 90%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9.4rem;
+}
+
+.partners_img_box {
+    // width: 30%;
+    height: 11.1rem;
+    margin-right: 14.1rem;
+    display: flex;
+    align-items: flex-end;
+}
+.partners_img_box:last-of-type {
+    margin-right: 0;
+}
+
+.partners_image {
+    width: 100%;
+    object-fit: cover;
+}

@@ -46,13 +46,13 @@
                                 для школьников
                             </h1>
                             <span class="title_value_description">Здесь должен быть пояснительный текст Можно про издательство, можно написать цену “от”..</span>
-                            <button class="button">Присоединиться</button>
+                            <button class="button" id="btnJoin">Присоединиться</button>
                             <div class="numPages_container">
-                                <img src="./img/arrow_last.svg" alt="arrow_last" class="arrow_last_img">
-                                <span class="numPages is-active_numPages">1</span>
-                                <span class="numPages">2</span>
-                                <span class="numPages">3</span>
-                                <img src="./img/arrow_next.svg" alt="arrow_next" class="arrow_next_img">
+                                <img src="./img/arrow_last.svg" alt="arrow_last" class="arrow_last_img" id="arrowLastPage">
+                                <span class="numPages is-active_numPages" id="page1">1</span>
+                                <span class="numPages" id="page2">2</span>
+                                <span class="numPages" id="page3">3</span>
+                                <img src="./img/arrow_next.svg" alt="arrow_next" class="arrow_next_img" id="arrowNextPage">
                             </div>
                             <img src="./img/book_logo.svg" alt="book_logo" class="book_logo">
                         </div>
@@ -69,7 +69,7 @@
             <!----------------- Buyers_choyce -------------->
             
             <div class="buyers_choyce__container">
-                    <h2 class="heading">Почему покупатели выбирают нас</h2>
+                    <h2 class="heading buyers_heading">Почему покупатели выбирают нас</h2>
                     <div class="buyers_choyce__advantages_container">
                         <div class="buyers_choyce__advantage__box">
                             <div class="advantage_logo_container">
@@ -111,8 +111,138 @@
                             </div>
                         </div>
                     </div>
-                    
             </div>
+
+            <!-- ---------------------- About shop -->
+
+            <div class="aboutShop_container">
+                <h2 class="heading">О магазине</h2>
+                <div class="aboutShop_value_wrapper">
+                    <div class="aboutShop_value_box">
+                        <h3 class="aboutShop_description">«Светоч» - это небольшой магазин, но мы, его создатели, поставили перед собой серьезную задачу.
+                            Мы хотим, чтобы здесь было пространство для встреч Книги и Ребенка. Это место, переступив порог которого, каждый родитель превращается в друга, помощника, советчика. Мы собираем только лучшую литературу для детей от 0 до 14 лет. И, конечно же, мы знаем, что дети всегда там, где сладкое, потому готовим полезные угощения, которые придутся по вкусу нашим маленьким посетителям.
+                            На наших полках можно найти развивающие игрушки, наборы для творчества, «взрослую» литературу о детях и другие полезные вещицы. Мы будем рады помочь вам с любыми рекомендациями и поучаствовать в формировании вашей домашней библиотеки.
+                            
+                            С нетерпением ждем вас в гости!</h3>
+                        <h3 class="aboutShop_description description_blue">С нетерпением ждём вас в гости!</h3>
+                    </div>
+                    <div class="aboutShop_image_wrapper">
+                        <div class="aboutShop_image_container">
+                            <img src="./img/about_shop.svg" alt="about_shop" class="aboutShop_image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------------------- Instagramm -->
+
+            <div class="instagram_container">
+                <h2 class="heading">Мы в Instagram</h2>
+                <div class="instagram_value_container">
+                    <div class="instagram_arrows_container">
+                        <img src="./img/arrow_last.svg" alt="last" arrow_last_img class="arrow_last_inst">
+                        <img src="./img/arrow_next.svg" alt="next" arrow_last_img class="arrow_next_inst">
+                    </div>
+                    <div class="instagram_images_container">
+                        <div class="instagram_img_box">
+                            <img src="./img/inst_img1.jpg" class="instagram_image" alt="instagram_image">
+                        </div>
+                        <div class="instagram_img_box">
+                            <img src="./img/inst_img2.jpg" class="instagram_image" alt="instagram_image">
+                            <a href="https://instagram.com" class="img_Inst_logo" target="_blank">
+                                <img src="./img/inst_logo.svg" alt="logo" >
+                            </a>
+                        </div>
+                        <div class="instagram_img_box">
+                            <img src="./img/inst_img3.jpg" class="instagram_image" alt="instagram_image">
+                        </div>
+                    </div>
+                </div>
+                <a type="button" class="button btn_instagram" target="_blank" href="http://instagram.com" id="btnInstagram">Перейти в instagram</a>
+                <img src="./img/img_Inst1.svg" alt="logo" class="img_Inst1">
+                <img src="./img/img_Inst2.svg" alt="logo" class="img_Inst2">
+            </div>
+
+            <!-- --------------------- Partners ---------- -->
+
+            <div class="partners_container">
+                <h2 class="heading">Наши партнеры</h2>
+                <div class="partners_images_container">
+                    <div class="partners_img_box">
+                        <img src="./img/par_0.jpg" alt="partners" class="partners_image">
+                    </div>
+                    <div class="partners_img_box">
+                        <img src="./img/par_1.jpg" alt="partners" class="partners_image">
+                    </div>
+                    <div class="partners_img_box">
+                        <img src="./img/par_2.svg" alt="partners" class="partners_image">
+                    </div>
+                </div>
+                <div class="partners_nums_container">
+                    <img src="./img/arrow_last.svg" alt="arrow_last" class="arrow_last_img" id="arrowLastPar">
+                    <span class="numPages is-active_numPages" id="partners1">1</span>
+                    <span class="numPages" id="partners2">2</span>
+                    <span class="numPages" id="partners3">3</span>
+                    <img src="./img/arrow_next.svg" alt="arrow_next" class="arrow_next_img" id="arrowNextPar">
+                </div>
+            </div>
+
+            <!-- ----------------------Contacts ------------- -->
+            <div class="info_container">
+                <div class="info_box">
+                    <div class="info_contacts_container">
+                        <h2 class="heading">Контакты</h2>
+                        <div class="phones_container">
+
+                            <div class="contact_box">
+                                <div class="contact_logo_box">
+                                    <img src="./img/phone_logo.svg" alt="info_logo" class="info_logo">
+                                </div>
+                                <span class="contact">8-(0222)-77-98-60</span>
+                            </div>
+
+                            <div class="contact_box">
+                                <div class="contact_logo_box">
+                                    <img src="./img/phone_logo.svg" alt="phone_logo" class="info_logo">
+                                </div>
+                                <span class="contact">8-(0222)-77-98-90</span>
+                            </div>
+
+                            <div class="contact_box adress">
+                                <div class="contact_logo_box">
+                                    <img src="./img/adress_logo.svg" alt="adress_logo" class="info_logo">
+                                </div>
+                                <span class="contact">г. Могилёв ул. Королёва, д. 37</span>
+                            </div>
+
+                            <div class="contact_box">
+                                <div class="contact_logo_box">
+                                    <img src="./img/clock_logo.svg" alt="clock_logo" class="info_logo">
+                                </div>
+                                <span class="contact">09:00-19:00 Пн-Пт</span>
+                            </div>
+
+                            <div class="contact_box">
+                                <span class="contact time">09:00-16:00 Сб-Вс</span>
+                            </div>
+
+                            <div class="contact_box mail">
+                                <div class="contact_logo_box">
+                                    <img src="./img/mail_logo.svg" alt="mail_logo" class="info_logo">
+                                </div>
+                                <span class="contact">гsvetoch92@mail.ru</span>
+                            </div>
+
+                            <span class="requisites">© 2016 ОДО "Светоч" г. Могилев</span>
+
+                        </div>
+                    </div>
+                    <div class="map_container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.6052253898765!2d30.364697433889273!3d53.90322034199957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d04e0038aa89a9%3A0x69fc158ae1b582e1!2z0YPQu9C40YbQsCDQmtC-0YDQvtC70ZHQstCwIDM3LCDQnNC-0LPQuNC70ZHQsiAyMTIwMzM!5e0!3m2!1sru!2sby!4v1663513731675!5m2!1sru!2sby"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 

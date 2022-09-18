@@ -17,6 +17,10 @@
     cursor: pointer;
 }
 
+.numPages:hover {
+    font-weight: bold;
+}
+
 .numPages:last-of-type {
     letter-spacing: 0;
 }
