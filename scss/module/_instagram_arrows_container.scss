@@ -11,5 +11,13 @@
 }
 
 .arrow_next_inst {
-cursor: pointer;
+    cursor: pointer;
+}
+
+
+@media(max-width: 860px) {
+    .instagram_arrows_container {
+        width: 42rem;
+        margin-top: 5.3rem;
+    }
 }

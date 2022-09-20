@@ -19,3 +19,11 @@
     background: linear-gradient(180deg, #FDCE26 0%, #FF7144 100%);
     box-shadow: 0px 2px 10px #FC9E4A;
 }
+
+
+@media (max-width: 860px) {
+    .button {
+        width: 27.4rem;
+        height: 6.4rem;
+    }
+}

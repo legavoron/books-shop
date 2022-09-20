@@ -24,3 +24,14 @@
 .numPages:last-of-type {
     letter-spacing: 0;
 }
+
+@media (max-width: 860px) {
+    .numPages_container {
+        margin-top: 8.1rem;
+    }
+
+    .numPages {
+        font-size: 1.8rem;
+        line-height: 2.176rem;
+    }
+}

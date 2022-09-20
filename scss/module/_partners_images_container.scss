@@ -8,7 +8,6 @@
 }
 
 .partners_img_box {
-    // width: 30%;
     height: 11.1rem;
     margin-right: 14.1rem;
     display: flex;
@@ -21,4 +20,16 @@
 .partners_image {
     width: 100%;
     object-fit: cover;
+}
+
+@media(max-width: 860px) {
+    .partners_images_container {
+        margin-top: 6.7rem;
+        margin-bottom: 6.4rem;
+    }
+
+    .partners_img_box {
+        height: 6.1rem;
+        margin-right: 7.6+rem;
+    }
 }

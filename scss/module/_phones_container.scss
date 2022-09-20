@@ -1,12 +1,11 @@
-.phones_container {
-    margin-top: 6.7rem;
-}
 
 .contact_box {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 2.6rem;
+    position: relative;
 }
 
 .contact_logo_box {
@@ -33,11 +32,12 @@
 }
 
 .adress {
-    padding-top: 2.2rem;
-    margin-bottom: 4.5rem;
+    margin-top: 4.8rem;
+    margin-bottom: 1.9rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
 .time {
@@ -45,7 +45,8 @@
 }
 
 .mail {
-    margin-bottom: 6.7rem;
+    margin-top: 2.3rem;
+    margin-bottom: 6.2rem;
 }
 
 .requisites {
@@ -56,4 +57,40 @@
     line-height: 2.1rem;
     text-align: center;
     color: #A8A8A8;
+}
+
+
+@media(max-width: 860px) {
+    .contact_box {
+        width: 100%;
+        margin-bottom: 2.6rem;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    .adress{
+        position: absolute;
+        left: 0;
+        bottom: -13rem;
+    }
+
+    .info_phones {
+        width: 50%;
+    }
+
+    .info_clocks {
+        margin-bottom: 10.7rem;
+    }
+
+    .mail {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    .requisites {
+        width: 50%;
+        text-align: end;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
 }

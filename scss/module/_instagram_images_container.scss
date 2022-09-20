@@ -1,4 +1,3 @@
-
 .instagram_images_container {
     width: 100%;
     display: flex;
@@ -24,6 +23,7 @@
 
 .instagram_img_box:last-child {
     margin-right: 0;
+    margin-bottom: 0;
 }
 
 .img_Inst_logo {
@@ -33,3 +33,28 @@
     height: 8.7rem;
 }
 
+
+@media(max-width: 860px) {
+    .instagram_images_container {
+        width: 42rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 7.1rem;
+    }
+    .instagram_img_box {
+        width: 100%;
+        height: 36rem;
+        margin: 0;
+        margin-bottom: 4rem;
+    }
+
+    .instagram_image {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        z-index: 2;
+    }
+}

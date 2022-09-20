@@ -7,3 +7,9 @@
     align-items: center;
     background-color: #F7F7F7;
 }
+
+@media(max-width: 860px) {
+    .info_container{
+        height: 92rem;
+    }
+}

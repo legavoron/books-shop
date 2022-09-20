@@ -8,3 +8,10 @@
     text-align: center;
     margin: 0;
 }
+
+@media (max-width: 860px) {
+    .heading {
+        font-size: 3.6rem;
+        line-height: 4.4rem;
+    }
+}

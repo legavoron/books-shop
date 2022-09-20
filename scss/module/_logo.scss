@@ -3,3 +3,12 @@
     height: 9.85rem;
     margin-top: -2rem;
 }
+
+
+@media (max-width: 860px) {
+    .logo {
+        width: 4.8rem;
+        height: 6.3rem;
+        margin-top: -1.8rem;
+    }
+}

@@ -7,10 +7,19 @@
 }
 .aboutShop_image_container {
     width: 100%;
-    height: 46.3rem;
 }
 
 .aboutShop_image {
     object-fit: cover;
     width: 100%;
+}
+
+
+
+@media (max-width: 860px) {
+    .aboutShop_image_wrapper {
+        width: 40%;
+        padding-top: 7.8rem;
+        padding-left: 4rem;
+    }
 }

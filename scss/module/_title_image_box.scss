@@ -3,13 +3,21 @@
     height: 53.5rem;
     position: absolute;
     right: 0;
-    bottom: 50px;
+    bottom: 5rem;
     
-
-
-
     img {
         object-fit: contain;
         width: 100%;
-        border-radius: 12px;    }
+        height: 100%;
+        border-radius: 12px;   
+    }
+}
+
+
+@media (max-width: 860px) {
+    .title_image_box {
+        height: 27.5rem;
+        position: absolute;
+        bottom: 19.5rem;
+    }
 }

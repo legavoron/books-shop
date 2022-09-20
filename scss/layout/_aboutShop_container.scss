@@ -1,11 +1,17 @@
 .aboutShop_container {
     width: 90%;
     max-width: 1440px;
-    height: 79.8rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 12.3em;
     padding-bottom: 15.2rem;
     box-sizing: border-box;
+}
+
+@media (max-width: 860px) {
+    .aboutShop_container {
+        padding-top: 0;
+        padding-bottom: 10.3rem;
+    }
 }

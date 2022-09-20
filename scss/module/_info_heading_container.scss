@@ -1,0 +1,14 @@
+.info_heading_container {
+    width: 90%;
+    max-width: 1440px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 6.3rem;
+}
+
+@media(max-width: 860px) {
+    .info_heading_container {
+        justify-content: center;
+        margin-top: 5.2rem;
+    }
+}
