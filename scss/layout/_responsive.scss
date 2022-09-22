@@ -10,6 +10,10 @@
   html {font-size: 8px} 
 }
 
+@media all and (max-width: 620px) {
+  html {font-size: 10px} 
+}
+
 @media all and (min-width: 1200px) {
     html {font-size: 8px} 
 }

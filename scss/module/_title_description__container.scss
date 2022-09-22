@@ -31,14 +31,6 @@
     color: #6C6C6C;
 }
 
-.book_logo {
-    width: 6.2rem;
-    height: 6.2rem;
-    margin-top: -17rem;
-    margin-left: 30rem;
-    z-index: 2;
-}
-
 
 @media (max-width: 860px) {
     .title_description__container {
@@ -55,6 +47,32 @@
     .title_value_description {
         width: 29.6rem;
         margin-bottom: 5.4rem;
+        font-size: 1.8rem;
+        line-height: 2.88rem;
+        color: #6C6C6C;
+    }
+    
+    .book_logo {
+        margin-top: -16rem;
+        margin-left: 23rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .title_description__container {
+        padding-top: 5.2rem;
+        
+        h1 {
+            width: 29.7rem;
+            margin-bottom: 4.1rem;
+            font-size: 3.6em;
+            line-height: 4.4rem;
+        }
+    }
+    
+    .title_value_description {
+        width: 29.6rem;
+        margin-bottom: 25.3rem;
         font-size: 1.8rem;
         line-height: 2.88rem;
         color: #6C6C6C;

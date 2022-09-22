@@ -1,3 +1,20 @@
 .is-active_numPages {
     color: #26497E;
 }
+
+
+.is-active_nav {
+    transform: translate(-100rem);
+}
+
+.is-hidden_nav {
+    transform: translate(2rem);
+}
+
+.is-active_toogleMenu {
+    transform: translate(-100%);
+}
+
+.is-hidden_toogleMenu {
+    transform: translate(100%);
+}

@@ -1,0 +1,48 @@
+.title_burger{
+    display: none;
+    cursor: pointer;
+}
+.title_burger span {
+    position: absolute;
+    left: 0;
+    width: 19.71px;
+    height: 1px;
+    top: 5.5px;
+    background-color: #323232;
+}
+.title_burger::before{
+    content: '';
+    background-color: #323232;
+    position: absolute;
+    height: 1px;
+    left: 0;
+}
+
+.title_burger::after {
+    content: '';
+    background-color: #323232;
+    position: absolute;
+    height: 1px;
+    left: 0;
+}
+
+.title_burger::before {
+    width: 25.71px;
+    left: 0;
+}
+.title_burger::after {
+    width: 12.86px;
+    bottom: 0;
+}
+
+@media(max-width: 620px) {
+    .title_burger{
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 25.71px;
+        height: 12px;
+        cursor: pointer;
+        z-index: 100;
+    }
+}

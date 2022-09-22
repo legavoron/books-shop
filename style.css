@@ -366,11 +366,19 @@ body {
 
 .title {
   width: 100%;
+  height: 83.6rem;
   background-color: #F9F9F9;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
 
+@media (max-width: 860px) {
+  .title {
+    height: 65.9rem;
+  }
+}
 @media all and (max-width: 1200px) {
   html {
     font-size: 6px;
@@ -384,6 +392,11 @@ body {
 @media all and (max-width: 770px) {
   html {
     font-size: 8px;
+  }
+}
+@media all and (max-width: 620px) {
+  html {
+    font-size: 10px;
   }
 }
 @media all and (min-width: 1200px) {
@@ -404,8 +417,15 @@ body {
   justify-content: space-between;
   padding-top: 8.8rem;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
+@media (max-width: 860px) {
+  .titleContainer {
+    padding-top: 6.2rem;
+  }
+}
 .buyers_choyce__container {
   width: 90%;
   max-width: 1440px;
@@ -515,27 +535,29 @@ body {
   color: #26497E;
 }
 
+.is-active_nav {
+  transform: translate(-100rem);
+}
+
+.is-hidden_nav {
+  transform: translate(2rem);
+}
+
+.is-active_toogleMenu {
+  transform: translate(-100%);
+}
+
+.is-hidden_toogleMenu {
+  transform: translate(100%);
+}
+
 .title_nav {
   width: 100%;
   max-width: 1439px;
-  position: relative;
   display: flex;
   justify-content: space-between;
 }
 
-.logo {
-  width: 7.5rem;
-  height: 9.85rem;
-  margin-top: -2rem;
-}
-
-@media (max-width: 860px) {
-  .logo {
-    width: 4.8rem;
-    height: 6.3rem;
-    margin-top: -1.8rem;
-  }
-}
 .menu {
   display: flex;
   justify-content: space-between;
@@ -565,6 +587,34 @@ body {
   display: inline;
 }
 
+@media (max-width: 620px) {
+  .title_nav {
+    width: 66%;
+  }
+
+  .nav {
+    position: absolute;
+    z-index: 100;
+    display: block;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    left: 100rem;
+  }
+  .nav .menu {
+    width: 100%;
+    flex-direction: column;
+  }
+  .nav .nav_li {
+    margin-bottom: 2.5rem;
+  }
+  .nav .nav_li a {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+  }
+}
 @media (max-width: 860px) {
   .menu {
     width: 44.6rem;
@@ -574,6 +624,77 @@ body {
     font-size: 1.4rem;
     line-height: 1.6rem;
     letter-spacing: 0.05em;
+  }
+}
+.logo {
+  width: 7.5rem;
+  height: 9.85rem;
+  margin-top: -2rem;
+}
+
+@media (max-width: 860px) {
+  .logo {
+    width: 4.8rem;
+    height: 6.3rem;
+    margin-top: -1.8rem;
+  }
+}
+@media (max-width: 620px) {
+  .logo {
+    width: 2.7rem;
+    height: 3.5rem;
+    margin-top: -1rem;
+  }
+}
+.title_burger {
+  display: none;
+  cursor: pointer;
+}
+
+.title_burger span {
+  position: absolute;
+  left: 0;
+  width: 19.71px;
+  height: 1px;
+  top: 5.5px;
+  background-color: #323232;
+}
+
+.title_burger::before {
+  content: "";
+  background-color: #323232;
+  position: absolute;
+  height: 1px;
+  left: 0;
+}
+
+.title_burger::after {
+  content: "";
+  background-color: #323232;
+  position: absolute;
+  height: 1px;
+  left: 0;
+}
+
+.title_burger::before {
+  width: 25.71px;
+  left: 0;
+}
+
+.title_burger::after {
+  width: 12.86px;
+  bottom: 0;
+}
+
+@media (max-width: 620px) {
+  .title_burger {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 25.71px;
+    height: 12px;
+    cursor: pointer;
+    z-index: 100;
   }
 }
 .title_phone img {
@@ -594,13 +715,22 @@ body {
   .title_phone img {
     width: 1.425rem;
     height: 1.425rem;
-    margin-right: 10px;
   }
   .title_phone span {
-    font-family: "Gilroy";
-    font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.648px;
+    letter-spacing: 0.05em;
+    color: #343434;
+  }
+}
+@media (max-width: 620px) {
+  .title_phone img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .title_phone span {
+    font-size: 1.2rem;
+    line-height: 1.412px;
     letter-spacing: 0.05em;
     color: #343434;
   }
@@ -609,6 +739,7 @@ body {
   width: 100%;
   height: 68rem;
   display: flex;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 860px) {
@@ -647,14 +778,6 @@ body {
   color: #6C6C6C;
 }
 
-.book_logo {
-  width: 6.2rem;
-  height: 6.2rem;
-  margin-top: -17rem;
-  margin-left: 30rem;
-  z-index: 2;
-}
-
 @media (max-width: 860px) {
   .title_description__container {
     padding-top: 8.2rem;
@@ -679,9 +802,39 @@ body {
     margin-left: 23rem;
   }
 }
+@media (max-width: 620px) {
+  .title_description__container {
+    padding-top: 5.2rem;
+  }
+  .title_description__container h1 {
+    width: 29.7rem;
+    margin-bottom: 4.1rem;
+    font-size: 3.6em;
+    line-height: 4.4rem;
+  }
+
+  .title_value_description {
+    width: 29.6rem;
+    margin-bottom: 25.3rem;
+    font-size: 1.8rem;
+    line-height: 2.88rem;
+    color: #6C6C6C;
+  }
+
+  .book_logo {
+    margin-top: -16rem;
+    margin-left: 23rem;
+  }
+}
 .title_image__container {
   width: 50%;
   height: 100%;
+  position: relative;
+}
+
+.button_wraper {
+  width: 100%;
+  margin-top: -26rem;
   position: relative;
 }
 
@@ -707,10 +860,29 @@ body {
   box-shadow: 0px 2px 10px #FC9E4A;
 }
 
+.book_logo {
+  position: absolute;
+  width: 6.2rem;
+  height: 6.2rem;
+  margin-top: -4rem;
+  margin-left: 16rem;
+  z-index: 2;
+}
+
 @media (max-width: 860px) {
+  .button_wraper {
+    width: 100%;
+    margin-top: -21rem;
+    position: relative;
+  }
+
   .button {
     width: 27.4rem;
     height: 6.4rem;
+  }
+
+  .book_logo {
+    margin-left: 11rem;
   }
 }
 .numPages_container {
@@ -780,6 +952,21 @@ body {
     bottom: 19.5rem;
   }
 }
+.toogleMenu {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #FF7144 0%, #FDCE26 100%);
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  z-index: 4;
+  display: block;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
 .heading {
   font-family: "Gilroy";
   font-style: normal;

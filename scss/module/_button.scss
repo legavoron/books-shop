@@ -1,3 +1,9 @@
+.button_wraper {
+    width: 100%;
+    margin-top: -26rem;
+    position: relative;
+}
+
 .button {
     width: 34.6rem;
     height: 8rem;
@@ -21,9 +27,30 @@
 }
 
 
+.book_logo {
+    position: absolute;
+    width: 6.2rem;
+    height: 6.2rem;
+    margin-top: -4rem;
+    margin-left: 16rem;
+    z-index: 2;
+}
+
+
 @media (max-width: 860px) {
+
+    .button_wraper {
+        width: 100%;
+        margin-top: -21rem;
+        position: relative;
+    }
+
     .button {
         width: 27.4rem;
         height: 6.4rem;
+    }
+
+    .book_logo {
+        margin-left: 11rem;
     }
 }

@@ -23,14 +23,28 @@
         img {
             width: 1.425rem;
             height: 1.425rem;
-            margin-right: 10px;
         }
     
         span {
-            font-family: 'Gilroy';
-            font-weight: 500;
             font-size: 1.4rem;
             line-height: 1.648px;
+            letter-spacing: 0.05em;
+            color: #343434;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .title_phone {
+
+        img {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    
+        span {
+            font-size: 1.2rem;
+            line-height: 1.412px;
             letter-spacing: 0.05em;
             color: #343434;
         }
