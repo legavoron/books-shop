@@ -124,3 +124,121 @@ function activeNumPages() {
         }
     });
 }
+
+// ----------------------- Inst Images --------------
+
+let currentInstImage = -1;
+let instImages = document.querySelectorAll('.instagram_img_box');
+
+const btnLastInst = document.querySelector('#btnLastInst');
+btnLastInst.addEventListener('click', lastInstImage);
+
+const btnNextInst = document.querySelector('#btnNextInst');
+btnNextInst.addEventListener('click', nextInstImage);
+
+function activeInstImg() {
+    console.log(currentInstImage)
+    instImages.forEach((img, i) => {
+        if (i == currentInstImage) {
+            img.classList.add('is-active_instImg')
+        } else {
+            img.classList.remove('is-active_instImg')
+        }
+    })
+}
+
+function nextInstImage() {
+    if (currentInstImage === 2) {
+        currentInstImage = 0
+    } else {
+        currentInstImage++;
+    }
+    activeInstImg();
+}
+
+function lastInstImage() {
+    if (currentInstImage <= 0) {
+        currentInstImage = 2
+    } else {
+        currentInstImage--;
+    }
+    activeInstImg();
+}
+
+// --------------------------- Partners -------------
+
+const partnersList = [
+    ['par_0', 'par_1', 'par_2'], 
+    ['par_3', 'par_4', 'par_5'],
+    ['par_6', 'par_7', 'par_8'],
+]
+
+let currentPartnersPage = 1;
+
+const btnPartnersPage1 = document.querySelector('#partners1');
+const btnPartnersPage2 = document.querySelector('#partners2');
+const btnPartnersPage3 = document.querySelector('#partners3');
+
+const btnNextPartnersPages = document.querySelector('#arrowNextPar');
+btnNextPartnersPages.addEventListener('click', nextPartnersPages);
+
+const btnLastPartnersPages = document.querySelector('#arrowLastPar');
+btnLastPartnersPages.addEventListener('click', lastPartnersPages);
+
+
+let pagesPartnersNums = [btnPartnersPage1, btnPartnersPage2, btnPartnersPage3];
+
+pagesPartnersNums.forEach(pagesNum => {
+    pagesNum.addEventListener('click', ()=> {
+        changePartnersPage(pagesNum.innerHTML)
+    })
+})
+
+function showPartnersPage() {
+    let partnersImagesList = document.querySelectorAll('.partners_image');
+
+    let num = 0;
+    partnersImagesList.forEach(img => {
+        if (num === 3) {
+            num = 0
+        }
+
+        img.src = `./img/${partnersList[currentPartnersPage -1][num]}.jpg`;
+        num++;
+        
+    })
+    activePartnersNumPages();
+}
+
+function changePartnersPage(num) {
+    currentPartnersPage = +num;
+    showPartnersPage();
+}
+
+function nextPartnersPages() {
+    if (+currentPartnersPage === 3) {
+        currentPartnersPage = 1
+    } else {
+        currentPartnersPage++;
+    }
+    showPartnersPage();
+}
+
+function lastPartnersPages() {
+    if (+currentPartnersPage === 1) {
+        currentPartnersPage = 3
+    } else {
+        currentPartnersPage--;
+    }
+    showPartnersPage();
+}
+
+function activePartnersNumPages() {
+    pagesPartnersNums.forEach(pagesNum => {
+        if (pagesNum.innerHTML == currentPartnersPage) {
+            pagesNum.classList.add('is-active_numPages');
+        } else {
+            pagesNum.classList.remove('is-active_numPages');
+        }
+    });
+}

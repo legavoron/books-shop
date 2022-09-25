@@ -3,7 +3,6 @@
     font-weight: 900;
 }
 
-
 .is-active_nav {
     transform: translate(-100rem);
 }
@@ -18,4 +17,8 @@
 
 .is-hidden_toogleMenu {
     transform: translate(100%);
+}
+
+.is-active_instImg {
+    transform: scale(1.05);
 }

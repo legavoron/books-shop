@@ -12,6 +12,12 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: 0.2s;
+    z-index: 10;
+}
+
+.instagram_img_box:hover {
+    transform: scale(1.05);
 }
 
 .instagram_image {

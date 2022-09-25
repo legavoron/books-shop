@@ -12,6 +12,7 @@
     margin-right: 14.1rem;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 }
 .partners_img_box:last-of-type {
     margin-right: 0;
@@ -19,7 +20,7 @@
 
 .partners_image {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 @media(max-width: 860px) {
@@ -44,6 +45,11 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+    }
+
+    .partners_image {
+        width: 100%;
+        height: 100%;
     }
 
     .partners_img_box {
