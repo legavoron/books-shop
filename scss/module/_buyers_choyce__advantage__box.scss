@@ -19,3 +19,17 @@
         margin-bottom: 10rem;
     }
 }
+
+@media (max-width: 620px) {
+    .buyers_choyce__advantage__box {
+        width: 100%;
+        height: 12.8rem;
+        margin: 0;
+        margin-bottom: 8.8rem;
+        justify-content: flex-start;
+    }
+
+    .buyers_choyce__advantage__box:last-of-type {
+        margin-bottom: 5rem;
+    }
+}

@@ -3,3 +3,11 @@
     height: 100%;
     position: relative;
 }
+
+@media (max-width: 620px) {
+    .title_image__container {
+        width: 24.6rem;
+        height: 20rem;
+        padding-top: 2.97rem;
+    }
+}

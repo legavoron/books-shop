@@ -35,3 +35,14 @@
         line-height: 2.176rem;
     }
 }
+
+@media (max-width: 620px) {
+    .numPages_container {
+        margin-top: 6.4rem;
+    }
+
+    .numPages {
+        font-size: 1.8rem;
+        line-height: 2.176rem;
+    }
+}

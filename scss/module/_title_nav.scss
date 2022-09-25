@@ -39,6 +39,20 @@
     }
 }
 
+
+@media (max-width: 860px) {
+    .menu {
+        width: 44.6rem;
+        height: 1.6rem;
+    
+        a {
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            letter-spacing: 0.05em;
+        }
+    }
+}
+
 @media (max-width: 620px) {
 
     .title_nav {
@@ -53,7 +67,7 @@
         -moz-transition: 0.4s;
         -o-transition: 0.4s;
         transition: 0.4s;
-        left: 100rem;
+        left: 105rem;
 
     .menu {
         width: 100%;
@@ -71,18 +85,4 @@
     }
     }
 
-}
-
-
-@media (max-width: 860px) {
-    .menu {
-        width: 44.6rem;
-        height: 1.6rem;
-    
-        a {
-            font-size: 1.4rem;
-            line-height: 1.6rem;
-            letter-spacing: 0.05em;
-        }
-    }
 }

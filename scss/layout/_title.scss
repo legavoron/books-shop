@@ -11,5 +11,13 @@
 @media (max-width: 860px) {
     .title {
         height: 65.9rem;
+        padding-bottom: 6rem;
     }
 }
+
+@media (max-width: 620px) {
+    .title {
+        padding-bottom: 6rem;
+    }
+}
+

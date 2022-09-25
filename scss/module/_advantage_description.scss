@@ -15,3 +15,22 @@
         margin-bottom: 0;
     }
 }
+
+
+@media (max-width: 620px) {
+    .advantage_description {
+        
+        h3 {
+            margin-top: 2.6rem;
+            width: 100%;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+            text-align: center;
+            color: #222222;
+            margin-bottom: 0;
+        }
+    }
+}

@@ -5,3 +5,15 @@
     flex-direction: column;
     align-items: center;
 }
+
+@media (max-width: 620px) {
+    .instagram_value_container {
+        width: 100%;
+        flex-direction: column-reverse;
+        padding-top: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0;
+        box-sizing: border-box;
+    }
+}

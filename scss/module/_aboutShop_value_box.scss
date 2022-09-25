@@ -36,5 +36,25 @@
 
     .description_blue {
         margin: 0;
+        color: #26497E;
+    }
+}
+
+@media (max-width: 620px) {
+    .aboutShop_value_box {
+        width: 100%;
+        padding-top: 3.7em;
+    }
+    
+    .aboutShop_description {
+        margin-bottom: 1.648rem;
+        font-size: 1.4rem;
+        line-height: 1.648rem;
+        color: #515151;
+    }
+
+    .description_blue {
+        margin: 0;
+        color: #26497E;
     }
 }

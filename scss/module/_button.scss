@@ -54,3 +54,24 @@
         margin-left: 11rem;
     }
 }
+
+@media (max-width: 620px) {
+
+    .button_wraper {
+        margin-top: 5.15rem;
+    }
+
+    .button {
+        width: 21.1rem;
+        height: 5.1rem;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
+    .book_logo {
+        width: 4rem;
+        height: 4rem;
+        margin-left: 6rem;
+        margin-top: -3rem;
+    }
+}

@@ -1,3 +1,5 @@
+// -------------------------- Toogle Menu --------------
+
 let widthWindow = document.documentElement.clientWidth;
 let toogleMenu = document.querySelector('.toogleMenu');
 let nav = document.querySelector('.nav');
@@ -35,3 +37,5 @@ function hiddenToogle () {
     nav.classList.remove('is-active_nav');
     nav.classList.add('is-hidden_nav');
 }
+
+// --------------------------- 
