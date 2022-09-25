@@ -1,5 +1,4 @@
 .info_box {
-    height: 100%;
     width: 90%;
     max-width: 1440px;
     display: flex;
@@ -7,9 +6,9 @@
 }
 
 .info_contacts_container {
-    width: 54.3rem;
+    width: 64rem;
     padding-top: 6.7rem;
-    padding-bottom: 70rem;
+    padding-bottom: 7rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -25,10 +24,29 @@
 
     .info_contacts_container{
         padding-top: 6.4rem;
-        padding-bottom: 7.4rem;
+        padding-bottom: 7.3rem;
         width: 67.7rem;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
+    }
+}
+
+@media(max-width: 620px) {
+    .info_box {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        box-sizing: border-box;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .info_contacts_container{
+        padding-top: 4.4rem;
+        padding-bottom: 4.2rem;
+        width: 100%;
+        flex-flow: column;
     }
 }

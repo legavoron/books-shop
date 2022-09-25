@@ -1,4 +1,9 @@
 .arrow_next_img {
     margin-left: 1.8rem;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.arrow_next_img:hover {
+    transform: scale(1.2);
 }

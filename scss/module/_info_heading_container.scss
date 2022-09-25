@@ -12,3 +12,10 @@
         margin-top: 5.2rem;
     }
 }
+
+@media(max-width: 620px) {
+    .info_heading_container {
+        justify-content: center;
+        margin-top: 3.9rem;
+    }
+}

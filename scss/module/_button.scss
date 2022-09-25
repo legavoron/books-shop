@@ -4,26 +4,79 @@
     position: relative;
 }
 
-.button {
+.btn {
     width: 34.6rem;
     height: 8rem;
-    background: linear-gradient(180deg, #FF7144 0%, #FDCE26 100%);
-    box-shadow: 0px 4px 30px #FC9E4A;
-    border-radius: 70px;
     font-family: 'Gilroy';
+    font-style: normal;
     font-weight: 600;
-    line-height: 2.386rem;
     font-size: 2rem;
-    color: #3A3A3A;
-    cursor: pointer;
+    line-height: 2.4rem;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 100px;
+    transition: all .2s;
 }
 
-.button:active {
-    background: linear-gradient(180deg, #FDCE26 0%, #FF7144 100%);
-    box-shadow: 0px 2px 10px #FC9E4A;
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-color {
+    background: linear-gradient(180deg, #FF7144 0%, #FDCE26 100%);
+    color: #3A3A3A;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-color::after {
+    background: linear-gradient(180deg, #FF7144 0%, #FDCE26 100%);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 
@@ -41,11 +94,11 @@
 
     .button_wraper {
         width: 100%;
-        margin-top: -21rem;
+        margin-top: -12rem;
         position: relative;
     }
 
-    .button {
+    .btn {
         width: 27.4rem;
         height: 6.4rem;
     }
@@ -61,7 +114,7 @@
         margin-top: 5.15rem;
     }
 
-    .button {
+    .btn {
         width: 21.1rem;
         height: 5.1rem;
         font-size: 1.4rem;
