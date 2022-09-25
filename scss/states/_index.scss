@@ -22,3 +22,13 @@
 .is-active_instImg {
     transform: scale(1.05);
 }
+
+.is-active_message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.is-hidden_message {
+    display: none;
+}

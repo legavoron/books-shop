@@ -1,0 +1,112 @@
+.message_container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(65, 49, 49, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    // display: none;
+}
+
+.message_wrapper {
+    width: 66.6rem;
+    height: 59.9rem;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(88, 88, 88, 0.82);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message_heading{
+    margin-top: 9.7rem;
+    margin-bottom: 3.2rem;
+}
+
+.message_description {
+    width: 80%;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #AAAAAA;
+}
+
+.input {
+    margin-top: 4.8rem;
+    margin-bottom: 4.33rem;
+    padding-left: 4.3rem;
+    width: 43.3rem;
+    height: 7.1rem;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #CBCBCB;
+    border-radius: 70px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: left;
+}
+
+.btn_message_wrapper {
+    position: relative;
+}
+
+@media (max-width: 1200px) {
+    .message_heading{
+        margin-top: 6rem;
+        margin-bottom: 3.2rem;
+    }
+}
+
+@media (max-width: 860px) {
+    .message_wrapper {
+        width: 50rem;
+        height: 50rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .message_wrapper {
+        width: 90%;
+        height: 40rem;
+    }
+    .message_heading{
+        margin-top: 3rem;
+        margin-bottom: 3.2rem;
+    }
+    .input {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-left: 2rem;
+        width: 80%;
+        height: 5.1rem;
+    }
+}
+
+@media (max-height: 500px) {
+    .message_container{
+        height: 100vh;
+    }
+    .message_wrapper {
+        width: 70rem;
+        height: 80vh;
+    }
+    .message_heading{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .input {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-left: 2rem;
+        width: 80%;
+        height: 5.1rem;
+    }
+}

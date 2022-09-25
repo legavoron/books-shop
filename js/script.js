@@ -242,3 +242,23 @@ function activePartnersNumPages() {
         }
     });
 }
+
+// -------------------- Message -----------------
+
+const btnJoin = document.querySelector('#btnJoin');
+btnJoin.addEventListener('click', showMessage);
+
+const message = document.querySelector('.message_container');
+
+const btnMessage = document.querySelector('#btnMessage');
+btnMessage.addEventListener('click', hiddenMessage);
+
+function showMessage() {
+    message.classList.remove('is-hidden_message');
+    message.classList.add('is-active_message');
+}
+
+function hiddenMessage() {
+    message.classList.remove('is-active_message');
+    message.classList.add('is-hidden_message');
+}
