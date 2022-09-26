@@ -251,7 +251,12 @@ btnJoin.addEventListener('click', showMessage);
 const message = document.querySelector('.message_container');
 
 const btnMessage = document.querySelector('#btnMessage');
-btnMessage.addEventListener('click', hiddenMessage);
+// btnMessage.addEventListener('click', hiddenMessage);
+
+let validPhone = false;
+
+const form = document.querySelector('.form');
+form.addEventListener('submit', chekPhone);
 
 function showMessage() {
     message.classList.remove('is-hidden_message');
@@ -261,4 +266,33 @@ function showMessage() {
 function hiddenMessage() {
     message.classList.remove('is-active_message');
     message.classList.add('is-hidden_message');
+}
+
+const input = document.querySelector('.input');
+input.addEventListener('click', startPhoneNum);
+
+const wrong = document.querySelector('.wrong');
+
+function startPhoneNum() {
+    input.value = '+375'
+}
+
+function chekPhone(event) {
+
+    let re = /^[\d\+]{12,16}\d$/;
+    let phone = input.value;
+    let valid = re.test(phone);
+
+    if (valid) {
+        console.log(`Phone Number: ${input.value}`);
+        input.classList.remove('is-notValide');
+        input.classList.add('input_border');
+        form.submit();
+        hiddenMessage();
+    } else {
+        console.log('Wrong Number');
+        wrong.innerHTML = 'Неверный формат'
+        input.classList.remove('input_border');
+        input.classList.add('is-notValide');
+    }
 }

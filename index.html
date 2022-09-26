@@ -76,11 +76,14 @@
                 <div class="message_container is-hidden_message">
                     <div class="message_wrapper">
                         <h2 class="heading message_heading">Спасибо!</h2>
-                        <span class="message_description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab"Lorem ipsum dolor sit amet, </span>
-                        <input type="text" class="input" placeholder="Телефон">
-                        <div class="btn_message_wrapper">
-                            <a href="" class="btn btn-color btn-animate" id="btnMessage">Отправить</a>
-                        </div>
+                        <label class="message_description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab"Lorem ipsum dolor sit amet, </label>
+                        <form action="#" type="post" class="form">
+                            <input type="text" class="input input_border" placeholder="Телефон" maxlength="13">
+                            <span class="wrong"></span>
+                            <div class="btn_message_wrapper">
+                                <button type="submit" class="btn btn-color btn-animate" id="btnMessage">Отправить</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
